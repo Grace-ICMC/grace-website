@@ -65,12 +65,12 @@
       </div>
       <!-- START THE CONTENT FOR THE VIDEO -->
       <div class="col-md-6 intros text-end">
-        <div class="video-box">
-          <img src="images/arts/intro-section-illustration.png" alt="video illutration" class="img-fluid">
-          <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
-            <span>
-              <i class="fas fa-play-circle"></i>
-            </span>
+        <div class="video-box position-relative">
+          <img src="images/testimonials/meninas.png" alt="video illustration" class="img-fluid">
+          <a href="https://youtu.be/c_r5hZOTpcM"
+            class="glightbox position-absolute top-50 start-50 translate-middle"
+            data-glightbox="type: video">
+            <span><i class="fas fa-play-circle"></i></span>
             <span class="border-animation border-animation--border-1"></span>
             <span class="border-animation border-animation--border-2"></span>
           </a>
@@ -684,15 +684,14 @@
    
     <script src="assets/vendors/js/glightbox.min.js"></script>
 
-    <script type="text/javascript">
+    <script>
       const lightbox = GLightbox({
-        'touchNavigation': true,
-        'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
-        'type': 'video',
-        'source': 'youtube', //vimeo, youtube or local
-        'width': 900,
-        'autoPlayVideos': 'true',
-});
+        selector: '.glightbox',
+        touchNavigation: true,
+        autoplayVideos: true
+      });
+    </script>
+
     
     </script>
      <script src="assets/js/bootstrap.bundle.min.js"></script>
